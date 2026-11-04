@@ -1,0 +1,14 @@
+{
+  "book_a": {
+    "title": "Photosynthesis",
+    "license": "CC BY-SA 4.0",
+    "sha256": "1015090a951bce114e28882719b76ac7b55fde38e9bc0783faca180a386919bd",
+    "length_chars": 49454
+  },
+  "book_b": {
+    "title": "Cellular Respiration",
+    "license": "CC BY-SA 4.0",
+    "sha256": "2c2db7927874f3b400cc2767e2e96f2624a685025237589c9f4986e7663c2c64",
+    "length_chars": 15320
+  }
+}

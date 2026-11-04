@@ -1,0 +1,20 @@
+model_id: "Qwen/Qwen2.5-7B-Instruct"
+revision: "a09a3545"
+stage: "M2_Protected_Book_B"
+base_adapter_checkpoint: "./checkpoints/m1_book_a"
+dataset_path: "data/book_b/train_clean.jsonl"
+output_dir: "./checkpoints/m2_protected"
+
+regularization:
+  method: "orthogonal_subspace"
+  subspace_rank_k: 4
+  lambda_orthogonal: 0.15
+
+training:
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 1.5e-4
+  num_train_epochs: 2
+  fp16: true
+  optim: "paged_adamw_8bit"
+  logging_steps: 5
