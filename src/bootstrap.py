@@ -40,3 +40,4 @@ if __name__ == "__main__":
     print(f"Sample Size: N = {len(prot_scores)} items")
     print(f"Mean Advantage: {mean_adv:+.1f}%")
     print(f"95% Paired Bootstrap Confidence Interval: [{low:+.1f}%, {high:+.1f}%]")
+

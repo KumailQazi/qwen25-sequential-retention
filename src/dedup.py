@@ -44,3 +44,4 @@ def scrub_contamination(train_path, panel_path, scrubbed_output, n=8):
 if __name__ == "__main__":
     scrub_contamination("data/book_a/train_qa.jsonl", "data/book_a/panel_54.jsonl", "data/book_a/train_clean.jsonl")
     scrub_contamination("data/book_b/train_qa.jsonl", "data/book_b/panel_71.jsonl", "data/book_b/train_clean.jsonl")
+

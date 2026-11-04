@@ -84,3 +84,4 @@ def generate_qa_pairs(corpus_path, output_train, output_panel, max_chunks=200):
 if __name__ == "__main__":
     generate_qa_pairs("data/book_a/corpus.txt", "data/book_a/train_qa.jsonl", "data/book_a/panel_54.jsonl")
     generate_qa_pairs("data/book_b/corpus.txt", "data/book_b/train_qa.jsonl", "data/book_b/panel_71.jsonl")
+

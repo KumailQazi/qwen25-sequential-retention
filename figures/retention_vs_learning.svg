@@ -56,3 +56,4 @@
   <line x1="50" y1="345" x2="670" y2="345" stroke="#e2e8f0" stroke-width="1"/>
   <text x="360" y="362" font-size="11" fill="#64748b" text-anchor="middle">Paired Bootstrap 95% Confidence Interval: [-9.3%, +0.0%] across 5,000 resamples</text>
 </svg>
+
