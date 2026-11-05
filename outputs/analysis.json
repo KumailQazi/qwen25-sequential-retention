@@ -1,0 +1,121 @@
+{
+  "report": {
+    "M0": {
+      "book_a": 36,
+      "book_b": 35,
+      "book_a_n": 150,
+      "book_b_n": 150,
+      "m1_correct": 40,
+      "m2_correct": 36,
+      "kept": 21,
+      "retention_pct": 52.5,
+      "newly_correct": 15,
+      "broken": 19
+    },
+    "M1": {
+      "book_a": 40,
+      "book_b": 40,
+      "book_a_n": 150,
+      "book_b_n": 150,
+      "m1_correct": 40,
+      "m2_correct": 40,
+      "kept": 40,
+      "retention_pct": 100.0,
+      "newly_correct": 0,
+      "broken": 0
+    },
+    "M2-naive": {
+      "book_a": 38,
+      "book_b": 42,
+      "book_a_n": 150,
+      "book_b_n": 150,
+      "m1_correct": 40,
+      "m2_correct": 38,
+      "kept": 20,
+      "retention_pct": 50.0,
+      "newly_correct": 18,
+      "broken": 20
+    },
+    "M2-KL": {
+      "book_a": 39,
+      "book_b": 45,
+      "book_a_n": 150,
+      "book_b_n": 150,
+      "m1_correct": 40,
+      "m2_correct": 39,
+      "kept": 30,
+      "retention_pct": 75.0,
+      "newly_correct": 9,
+      "broken": 10
+    },
+    "M2-prot": {
+      "book_a": 36,
+      "book_b": 48,
+      "book_a_n": 150,
+      "book_b_n": 150,
+      "m1_correct": 40,
+      "m2_correct": 36,
+      "kept": 25,
+      "retention_pct": 62.5,
+      "newly_correct": 11,
+      "broken": 15
+    }
+  },
+  "mcnemar_book_a": {
+    "M2-naive": {
+      "lost": 20,
+      "gained": 18,
+      "p": 0.8714146793645341,
+      "ci": [
+        -11.33,
+        8.67
+      ]
+    },
+    "M2-KL": {
+      "lost": 10,
+      "gained": 9,
+      "p": 1.0,
+      "ci": [
+        -10.67,
+        9.33
+      ]
+    },
+    "M2-prot": {
+      "lost": 15,
+      "gained": 11,
+      "p": 0.557197093963623,
+      "ci": [
+        -12.67,
+        7.33
+      ]
+    }
+  },
+  "mcnemar_book_b": {
+    "M2-naive": {
+      "gained": 14,
+      "lost": 12,
+      "p": 0.8450189828872681
+    },
+    "M2-KL": {
+      "gained": 7,
+      "lost": 2,
+      "p": 0.1796875
+    },
+    "M2-prot": {
+      "gained": 11,
+      "lost": 3,
+      "p": 0.057373046875
+    }
+  },
+  "audit": {
+    "retention_never_exceeds_100": true,
+    "book_b_panel_has_real_answers": true,
+    "book_b_not_zero_at_base": true,
+    "m1_beats_m0_on_book_a": true,
+    "flags_reproducible_from_jsonl": true
+  },
+  "panel": {
+    "book_a": 150,
+    "book_b": 150
+  }
+}

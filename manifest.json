@@ -1,14 +1,256 @@
 {
-  "book_a": {
-    "title": "Photosynthesis",
-    "license": "CC BY-SA 4.0",
-    "sha256": "1015090a951bce114e28882719b76ac7b55fde38e9bc0783faca180a386919bd",
-    "length_chars": 49454
-  },
-  "book_b": {
-    "title": "Cellular Respiration",
-    "license": "CC BY-SA 4.0",
-    "sha256": "2c2db7927874f3b400cc2767e2e96f2624a685025237589c9f4986e7663c2c64",
-    "length_chars": 15320
+  "generated_with": "colab_runner_v2.1",
+  "corpus_budget_chars": 600000,
+  "books": {
+    "book_a": {
+      "sha256": "94fce6cfca3c0d86b1067b0ac3244e9d9c61918cbdf7ca6eb5bcc6b193e0f9f1",
+      "chars": 450389,
+      "approx_tokens": 112597,
+      "articles": 20,
+      "sources": [
+        {
+          "title": "Photosynthesis",
+          "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+          "chars": 49417,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Photosystem II",
+          "url": "https://en.wikipedia.org/wiki/Photosystem_II",
+          "chars": 6765,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Photosystem I",
+          "url": "https://en.wikipedia.org/wiki/Photosystem_I",
+          "chars": 7164,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Light-dependent reactions",
+          "url": "https://en.wikipedia.org/wiki/Photosystem",
+          "chars": 21161,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Calvin cycle",
+          "url": "https://en.wikipedia.org/wiki/Calvin_cycle",
+          "chars": 13861,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Carbon fixation",
+          "url": "https://en.wikipedia.org/wiki/Biological_carbon_fixation",
+          "chars": 14577,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Photorespiration",
+          "url": "https://en.wikipedia.org/wiki/Photorespiration",
+          "chars": 14177,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "C4 carbon fixation",
+          "url": "https://en.wikipedia.org/wiki/C4_carbon_fixation",
+          "chars": 19684,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Crassulacean acid metabolism",
+          "url": "https://en.wikipedia.org/wiki/Crassulacean_acid_metabolism",
+          "chars": 12536,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Chlorophyll",
+          "url": "https://en.wikipedia.org/wiki/Chlorophyll",
+          "chars": 14147,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Chloroplast",
+          "url": "https://en.wikipedia.org/wiki/Chloroplast",
+          "chars": 84690,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thylakoid",
+          "url": "https://en.wikipedia.org/wiki/Thylakoid",
+          "chars": 21486,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Light-harvesting complex",
+          "url": "https://en.wikipedia.org/wiki/Light-harvesting_complex",
+          "chars": 6603,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Photosynthetic reaction centre",
+          "url": "https://en.wikipedia.org/wiki/Photosynthetic_reaction_centre",
+          "chars": 15999,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "RuBisCO",
+          "url": "https://en.wikipedia.org/wiki/RuBisCO",
+          "chars": 24316,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Carotenoid",
+          "url": "https://en.wikipedia.org/wiki/Carotenoid",
+          "chars": 26353,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Phycobilin",
+          "url": "https://en.wikipedia.org/wiki/Phycobilin",
+          "chars": 2399,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Cyanobacteria",
+          "url": "https://en.wikipedia.org/wiki/Cyanobacteria",
+          "chars": 56562,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Artificial photosynthesis",
+          "url": "https://en.wikipedia.org/wiki/Artificial_photosynthesis",
+          "chars": 17312,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Photosystem",
+          "url": "https://en.wikipedia.org/wiki/Photosystem",
+          "chars": 21161,
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    "book_b": {
+      "sha256": "09cd21b1199d2860348fa0634c8670e0a0c8df1a908b174d7911671a5813507a",
+      "chars": 412289,
+      "approx_tokens": 103072,
+      "articles": 19,
+      "sources": [
+        {
+          "title": "Cellular respiration",
+          "url": "https://en.wikipedia.org/wiki/Cellular_respiration",
+          "chars": 15302,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Glycolysis",
+          "url": "https://en.wikipedia.org/wiki/Glycolysis",
+          "chars": 45830,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Citric acid cycle",
+          "url": "https://en.wikipedia.org/wiki/Citric_acid_cycle",
+          "chars": 28190,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Oxidative phosphorylation",
+          "url": "https://en.wikipedia.org/wiki/Oxidative_phosphorylation",
+          "chars": 39240,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Electron transport chain",
+          "url": "https://en.wikipedia.org/wiki/Electron_transport_chain",
+          "chars": 22137,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ATP synthase",
+          "url": "https://en.wikipedia.org/wiki/ATP_synthase",
+          "chars": 15050,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Chemiosmosis",
+          "url": "https://en.wikipedia.org/wiki/Chemiosmosis",
+          "chars": 24263,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Adenosine triphosphate",
+          "url": "https://en.wikipedia.org/wiki/Adenosine_triphosphate",
+          "chars": 27570,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Mitochondrion",
+          "url": "https://en.wikipedia.org/wiki/Mitochondria",
+          "chars": 67553,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pyruvic acid",
+          "url": "https://en.wikipedia.org/wiki/Pyruvic_acid",
+          "chars": 5908,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Acetyl-CoA",
+          "url": "https://en.wikipedia.org/wiki/Acetyl-CoA",
+          "chars": 11489,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Beta oxidation",
+          "url": "https://en.wikipedia.org/wiki/Beta_oxidation",
+          "chars": 18294,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gluconeogenesis",
+          "url": "https://en.wikipedia.org/wiki/Gluconeogenesis",
+          "chars": 15403,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Fermentation",
+          "url": "https://en.wikipedia.org/wiki/Fermentation",
+          "chars": 28831,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lactic acid fermentation",
+          "url": "https://en.wikipedia.org/wiki/Lactic_acid_fermentation",
+          "chars": 14454,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Ethanol fermentation",
+          "url": "https://en.wikipedia.org/wiki/Ethanol_fermentation",
+          "chars": 10692,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Anaerobic respiration",
+          "url": "https://en.wikipedia.org/wiki/Anaerobic_respiration",
+          "chars": 6368,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Cori cycle",
+          "url": "https://en.wikipedia.org/wiki/Cori_cycle",
+          "chars": 4603,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Respiratory quotient",
+          "url": "https://en.wikipedia.org/wiki/Respiratory_quotient",
+          "chars": 11094,
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    }
   }
 }
