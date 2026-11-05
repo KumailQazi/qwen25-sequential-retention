@@ -1,0 +1,28 @@
+# Checkpoints and Model Weights
+checkpoints/
+**/checkpoints/
+offload/
+**/offload/
+*.bin
+*.pt
+*.safetensors
+adapter_model.safetensors
+adapter_config.json
+
+# Agents and Skills
+.agents/
+.skills/
+
+# Data and Cache
+data/
+outputs/checkpoints/
+*.zip
+*.tar.gz
+
+# Python Bytecode and Envs
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
