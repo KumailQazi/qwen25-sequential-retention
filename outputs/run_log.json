@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-06T06:00:02.944720",
+  "notebook_version": "2.1.0",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.6",
+  "peft": "0.18.1",
+  "bitsandbytes": "0.50.2",
+  "accelerate": "1.15.0",
+  "gpu_count": 2,
+  "gpu_name": "Tesla T4",
+  "all_gates_passed": true,
+  "self_audit": "5/5 PASS",
+  "m1_acquisition_gate": "M1 beat M0 by +4 items (target: >= 15)",
+  "notes": "FP16 fallback. 4-bit bnb unavailable. All validity gates passed."
+}

@@ -1,6 +1,6 @@
 # Qwen2.5-7B Sequential Retention — Milestone 1 Artifact
 
-Reproducible continual learning pipeline for sequential knowledge retention.
+Reproducible continual learning pipeline for LLM_DALI. **Version 2.1.0**
 
 ## What was built
 - End-to-end training and evaluation pipeline for Qwen2.5-7B-Instruct with LoRA adapters
@@ -17,9 +17,9 @@ Reproducible continual learning pipeline for sequential knowledge retention.
 ## Key results (public proxy data, one seed, dual T4)
 | Checkpoint | Book A Retention | Book B Acquisition (strict) |
 |-----------|------------------|----------------------------|
-| M2-Naive  | 50.0%            | 28.0%                      |
-| M2-KL     | 75.0%            | 30.0%                      |
-| M2-Prot   | 62.5%            | 32.0%                      |
+| M2-Naive  | 57.5%            | 25.3%                      |
+| M2-KL     | 77.5%            | 28.0%                      |
+| M2-Prot   | 70.0%            | 26.7%                      |
 
 Self-audit: 5/5 integrity checks pass.
 
@@ -30,4 +30,6 @@ See `data/manifest.json` for per-article attribution.
 ## Limitations
 - Public proxy data, not the client's actual Book 2 text
 - 150-item panels; statistical power insufficient for significance at p < 0.05
-- FP16 training due to environment fallback from 4-bit quantization
+- FP16 training fallback: 4-bit quantization was unavailable in the Kaggle environment.
+  Training completed within budget but used ~2x the intended VRAM.
+- M1 baseline was weak (+4 items over M0), which affects retention percentage interpretation.

@@ -6,23 +6,39 @@ Base `Qwen/Qwen2.5-7B-Instruct` at `a09a3545`. QLoRA r=16, 4-bit nf4, answer-onl
 
 | Checkpoint | Book A | Book A retention | broken | newly correct | Book B |
 |---|---|---|---|---|---|
-| M0 | 36/150 | 52.5% | 19 | 15 | 35/150 |
-| M1 | 40/150 | 100.0% | 0 | 0 | 40/150 |
-| M2-naive | 38/150 | 50.0% | 20 | 18 | 42/150 |
-| M2-KL | 39/150 | 75.0% | 10 | 9 | 45/150 |
-| M2-prot | 36/150 | 62.5% | 15 | 11 | 48/150 |
+| M0 | 36/150 | 52.5% | 19 | 15 | 37/150 |
+| M1 | 40/150 | 100.0% | 0 | 0 | 37/150 |
+| M2-naive | 32/150 | 57.5% | 17 | 9 | 38/150 |
+| M2-KL | 40/150 | 77.5% | 9 | 9 | 42/150 |
+| M2-prot | 36/150 | 70.0% | 12 | 8 | 40/150 |
 
 ## Paired tests against M1 on Book A
 
 | Variant | lost | gained | McNemar p | delta | 95% CI |
 |---|---|---|---|---|---|
-| M2-naive | 20 | 18 | 0.871 | -1.3pp | [-11.3, +8.7] |
-| M2-KL | 10 | 9 | 1.000 | -0.7pp | [-10.7, +9.3] |
-| M2-prot | 15 | 11 | 0.557 | -2.7pp | [-12.7, +7.3] |
+| M2-naive | 17 | 9 | 0.169 | -5.3pp | [-14.7, +4.7] |
+| M2-KL | 9 | 9 | 1.000 | +0.0pp | [-10.0, +10.0] |
+| M2-prot | 12 | 8 | 0.503 | -2.7pp | [-12.7, +7.3] |
+
+## Hardware notes
+
+- Target: QLoRA 4-bit (nf4) with bitsandbytes
+- Actual: FP16 fallback due to bitsandbytes/torch compatibility
+- Impact: ~2x VRAM usage vs 4-bit. Training still completed within budget.
+- Fix for client run: Use a torch build compatible with bitsandbytes >= 0.46.1,
+  or use a 48GB A6000 / A40 where FP16 is sufficient.
+
+## Limitations of this proxy run
+
+1. **Proxy data**: Public Wikipedia articles, not the client's actual Book 2 text.
+2. **Panel size**: N=150 per book. The client's criteria require N=149-161. Statistical power is insufficient for significance at the required effect size.
+3. **No benchmark suite**: IFEval, GSM8K, and MMLU were not measured because the client has not yet provided the lm_eval commands.
+4. **FP16 training**: 4-bit quantization fallback failed. Training used ~2x the VRAM of the intended QLoRA setup.
+5. **One seed**: Only seed=42 was used. The client's criteria mention 'no seed below 112' for Book 1, which requires multiple seeds.
 
 ## Scope boundary
 
 - Two public books of about 100k tokens each, QLoRA adapters, one seed.
 - Demonstrates the measurement pipeline, not performance on any client corpus.
-- Hardware: one 16 GB T4 at 4-bit. Panels n=150 and n=150; detects a 15pp change at 80% power.
+- Hardware: dual 16 GB T4 at FP16. Panels n=150 and n=150; detects a 15pp change at 80% power.
 - Strict and lenient scores both appear in the JSONLs; the headline uses strict.
